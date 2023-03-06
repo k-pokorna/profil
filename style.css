@@ -14,6 +14,11 @@ html { box-sizing: border-box; }
 	twitter    #1da1f2
 */
 
+/* Tohle vymazalo potřebný whitespace viz: https://stackoverflow.com/questions/19893019/html-white-space-around-elements-how-to-remove */
+html, body {
+    padding:0;
+    margin:0;
+}
 
 body {
 	background-color: #bdc3c7;
@@ -92,15 +97,16 @@ body {
 	color: #fff;
 }
 
-/* SPODNÍ DVĚ TLAČÍTKA - problém s paddingem, aby odkaz zůstal přes celé tlačítko */
+/* SPODNÍ DVĚ TLAČÍTKA - bylo nutné vynulovat whitespace a upravit šířku nadřazeného prvku i linku (aby byly obě šířky totožné 125px) */
 
 .facebook {
 	display: inline-block;
+	width: 125px;
+	border-right: 1px solid #3f464d;
 }
 
 .facebook a {
-	border-right: 1px solid #3f464d;
-	padding: 12px 24.5px;
+	width: 125px;
 }
 
 .facebook:hover {
@@ -109,20 +115,14 @@ body {
 
 .twitter {
 	display: inline-block;
+	width: 125px;
+	border-left: 1px solid #3f464d;
 }
 
 .twitter a {
-	border-left: 1px solid #3f464d;
-	padding: 12px 24.5px;
+	width: 125px;
 }
 
 .twitter:hover {
 	background-color: #1da1f2;
-}
-
-/* Zadání k náhledu */
-.zadani {
-	margin-top: 50px;
-	color: #000;
-	font-size: 20px;
 }
