@@ -2,6 +2,7 @@
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
 
+
 /*
 	BARVY
 	czechitas  #b92e81
@@ -16,4 +17,112 @@ html { box-sizing: border-box; }
 
 body {
 	background-color: #bdc3c7;
+	color: #a9b7b6;
+	font-family: 'Source Sans Pro';
+	font-size: 14px;
+}
+
+.hlavicka {
+	position: relative;
+}
+
+.profil {
+	width: 250px;
+	background-color: #31363b;
+	margin: 25px 0 0 25px;
+	box-shadow: 0px 4px 6px rgb(0 0 0 / 50%);
+}
+
+.obsah {
+	padding: 20px;
+}
+
+.jmeno {
+	color: #fff;
+	margin: 0;
+	font-family: 'Montserrat';
+	font-weight: 600;
+	font-size: 23px;
+	margin-top: 10px;
+}
+
+.foto {
+	width: 250px;
+}
+
+.logo {
+	background-color: #b92e81;
+	border-radius: 50%;
+	position: absolute;
+	right: 25px;
+	bottom: -25px;
+	box-shadow: 6px 6px 12px rgb(0 0 0 / 0.5);
+}
+
+.odkazy {
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.portfolio a {
+	border-top: 2px solid #3f464d;
+	border-bottom: 2px solid #3f464d;
+	width: 250px;
+}
+
+.portfolio:hover {
+	background-color: #e74c3c;
+	color: #fff;
+}
+
+.odkazy a {
+	color: #a9b7b6;
+	text-transform: uppercase;
+	font-family: 'Montserrat';
+	font-weight: 700;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	padding: 12px 0;
+}
+
+.odkazy a:hover {
+	color: #fff;
+}
+
+/* SPODNÍ DVĚ TLAČÍTKA - problém s paddingem, aby odkaz zůstal přes celé tlačítko */
+
+.facebook {
+	display: inline-block;
+}
+
+.facebook a {
+	border-right: 1px solid #3f464d;
+	padding: 12px 24.5px;
+}
+
+.facebook:hover {
+	background-color: #3b5998;
+}
+
+.twitter {
+	display: inline-block;
+}
+
+.twitter a {
+	border-left: 1px solid #3f464d;
+	padding: 12px 24.5px;
+}
+
+.twitter:hover {
+	background-color: #1da1f2;
+}
+
+/* Zadání k náhledu */
+.zadani {
+	margin-top: 50px;
+	color: #000;
+	font-size: 20px;
 }
